@@ -24,12 +24,6 @@ Compile the contracts:
 npx hardhat compile
 ```
 
-Run the tests:
-
-```shell
-npx hardhat test
-```
-
 Start a local Hardhat network:
 
 ```shell
