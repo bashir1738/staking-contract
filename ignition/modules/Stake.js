@@ -11,5 +11,7 @@ module.exports = buildModule("StakingModule", (m) => {
 
   const staking = m.contract("Staking", [c4Token, c4Rewards]);
 
+  m.call(c4Rewards, "setStakingContract", [staking]);
+
   return { c4Token, c4Rewards, staking };
 });
